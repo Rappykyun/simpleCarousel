@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Carousel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="w-full max-w-2xl">
+      <div class="relative overflow-hidden">
+        <div
+          id="carousel"
+          class="flex transition-transform duration-300 ease-in-out"
+        >
+          <div class="w-full flex-shrink-0">
+            <img
+              src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
+              alt="Slide 1"
+              class="w-full h-64 object-cover"
+            />
+          </div>
+          <div class="w-full flex-shrink-0">
+            <img
+              src="https://images.unsplash.com/photo-1469474968028-56623f02e42e"
+              alt="Slide 2"
+              class="w-full h-64 object-cover"
+            />
+          </div>
+          <div class="w-full flex-shrink-0">
+            <img
+              src="https://images.unsplash.com/photo-1501854140801-50d01698950b"
+              alt="Slide 3"
+              class="w-full h-64 object-cover"
+            />
+          </div>
+          <div class="w-full flex-shrink-0">
+            <img
+              src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e"
+              alt="Slide 4"
+              class="w-full h-64 object-cover"
+            />
+          </div>
+        </div>
+
+        <button
+          id="prevBtn"
+          class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white bg-opacity-50 hover:bg-opacity-75 rounded-full p-2"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 19l-7-7 7-7"
+            />
+          </svg>
+        </button>
+        <button
+          id="nextBtn"
+          class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white bg-opacity-50 hover:bg-opacity-75 rounded-full p-2"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <div id="dots" class="flex justify-center mt-4 space-x-2"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
